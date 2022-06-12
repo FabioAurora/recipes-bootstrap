@@ -1,4 +1,41 @@
+/* CSS variables */
+:root {
+    --text-secondary: rgb(181, 70, 15);
+}
 
+
+/* base CSS */
+a {
+    text-decoration: none;
+}
+
+
+
+/* Custom CSS */
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+header {
+    border-bottom: 1px solid gold;
+}
+
+.card,
+.card-img-top {
+    border-radius: 0;
+}
+
+.card-title {
+    color: var(--text-secondary);
+}
+
+.card-body {
+    font-size: 1.375rem;
+    line-height: 1.22;
+    color: rgb(51, 51, 51);
+}
+
+.card-footer {
+    background: none;
+    border: none;
 }
