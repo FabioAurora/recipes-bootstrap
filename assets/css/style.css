@@ -1,17 +1,36 @@
 /* CSS variables */
+/* ********************* */
 :root {
+    /* colors */
+    /* text */
     --text-secondary: rgb(181, 70, 15);
+    --clr-card-text: rgb(51, 51, 51);
+    --clr-timer-text:rgb(97, 97, 97);
+
+    /* background */
+    --bg-body: #F0F9F9;
+
+    /* icons */
+    --clr-icon-timer:rgb(17, 119, 119);
+
+    /* 
+    */
 }
 
 
 /* base CSS */
-a {
-    text-decoration: none;
+/* ************************** */
+body {
+    background-color: var(--bg-body);
 }
 
-
+a {
+    text-decoration: none;
+    color: var(--clr-card-text);
+}
 
 /* Custom CSS */
+/* ************************** */
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -25,17 +44,50 @@ header {
     border-radius: 0;
 }
 
+.img__attribution {
+    font-size: .8rem;
+}
+
 .card-title {
     color: var(--text-secondary);
+}
+.card-text:hover {
+    text-decoration: underline;
 }
 
 .card-body {
     font-size: 1.375rem;
     line-height: 1.22;
-    color: rgb(51, 51, 51);
+    color: var(--clr-card-text);
 }
 
 .card-footer {
     background: none;
     border: none;
 }
+
+.card__footer-icon,
+.img__attribution{
+    color: var(--clr-icon-timer);
+}
+
+.card__footer-time {
+    color: var(--clr-timer-text);
+}
+
+/* explore recipes */
+.explore__recipes {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.explore__options {
+    border-bottom: 1px solid;
+    padding-bottom: .5rem;
+}
+.explore__recipes:hover {
+    color: var(--text-secondary);
+}
+
+
+
