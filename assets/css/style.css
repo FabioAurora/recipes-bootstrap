@@ -39,6 +39,11 @@ header {
     border-bottom: 1px solid gold;
 }
 
+.navbar-brand {
+    width: 60px;
+    margin: 0 auto;
+}
+
 .card,
 .card-img-top {
     border-radius: 0;
