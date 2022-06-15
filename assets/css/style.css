@@ -94,5 +94,11 @@ header {
     color: var(--text-secondary);
 }
 
+.small__card-attribution {
+    font-size: .6rem;
+}
 
+.small__card-title {
+    font-size: .8rem;
+}
 
