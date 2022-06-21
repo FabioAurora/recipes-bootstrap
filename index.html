@@ -19,15 +19,27 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
-    <header class="container-lg mb-4">
+    <header class="container-lg mb-4 sticky-top bg-light">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <img src="/assets/images/aurora-logo.png" alt="" class="navbar-brand">
+          <img
+            src="/assets/images/aurora-logo.png"
+            alt=""
+            class="navbar-brand"
+          />
           <button
             class="navbar-toggler"
             type="button"
@@ -51,7 +63,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Recipes
+                  <span class="navbar-text">Recipes</span>
                 </a>
                 <ul
                   class="dropdown-menu"
@@ -75,7 +87,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Quick & easy
+                  <span class="navbar-text">Quick & easy</span>
                 </a>
                 <ul
                   class="dropdown-menu"
@@ -98,7 +110,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Holidays & seasons
+                  <span class="navbar-text">Holidays & seasons</span>
                 </a>
                 <ul
                   class="dropdown-menu"
@@ -113,7 +125,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >About</a
+                  ><span class="navbar-text about-text">About</span></a
                 >
               </li>
             </ul>
@@ -122,14 +134,14 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container-lg">
       <section class="container-fluid">
-        <div class="section-header d-flex row text-center mt-1 mb-3">
+        <div class="section-header d-flex row mt-1 mb-3">
           <div class="mb-3">
-            <h1 class="display-3">Recipes & Cooking Ideas</h1>
+            <h1 class="display-3 main-title">Recipes & Cooking Ideas</h1>
           </div>
           <div>
-            <p class="lh-sm">
+            <p class="lh-sm main-para">
               We know the deal. We feel your pain. Here are our superstar
               workhorse recipes, designed and tested to help you cook a great
               family meal.
@@ -137,102 +149,113 @@
           </div>
         </div>
       </section>
+
       <!-- First card -->
       <!-- ************************************** -->
-      <a
-        href="#"
-        class="card mt-4 mb-3 pb-3 border-0 d-flex"
-        data-cta="Read Now"
-        data-ordinal="1"
-      >
-        <!-- card media -->
-        <img
-          src="/assets/images/grilled-chicken-margherita.jpg"
-          class="card-img-top"
-          alt="Plated Grilled Chicken Margherita with tomatoes on top"
-        />
-        <!-- /card media -->
-        <div class="card-body ms-2">
-          <!-- card body -->
-          <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
-          <span class="card-text fs-1">Grilled Chicken Margherita</span>
-          <p class="fs-6 fw-bold mt-2">France C</p>
-        </div>
-        <!-- /card body -->
-        <div class="card-footer ms-2">
-          <div class="d-flex">
-            <i class="bi bi-clock-history card__footer-icon"></i>
-            <span class="px-1 card__footer-time">5 hrs</span>
-          </div>
-        </div> </a
-      ><!-- /First card -->
+      <section class="d-flex flex-column flex-xl-row">
+        <div id="topCards" class="row flex-xl-column">
+          <a
+            href="/assets/recipes/grilledchicken.html"
+            class="card mt-4 mb-3 pb-3 pb-xl-0 border-0 d-flex col-sm-6 flex-xl-row"
+            data-cta="Read Now"
+            data-ordinal="1"
+          >
+            <!-- card media -->
+            <img
+              src="/assets/images/grilled-chicken-margherita.jpg"
+              class="card-img-top"
+              alt="Plated Grilled Chicken Margherita with tomatoes on top"
+            />
+            <!-- /card media -->
+            <div>
+              <div class="card-body horizontal ms-2">
+                <!-- card body -->
+                <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
+                <span class="card-text font-xl"
+                  >Grilled Chicken Margherita</span
+                >
+                <p class="fs-6 fw-bold mt-2">France C</p>
+              </div>
+              <!-- /card body -->
+              <div class="card-footer ms-2">
+                <div class="d-flex">
+                  <i class="bi bi-clock-history card__footer-icon"></i>
+                  <span class="px-1 card__footer-time">5 hrs</span>
+                </div>
+              </div>
+            </div> </a
+          ><!-- /First card -->
 
-      <!-- second-card -->
-      <!-- ************************************** -->
-      <a
-        href="#"
-        class="card mt-4 mb-3 pb-3 border-0 d-flex"
-        data-cta="Read Now"
-        data-ordinal="1"
-      >
-        <!-- card media -->
-        <img
-          src="/assets/images/chicken-pizza.jpg"
-          class="card-img-fluid"
-          alt="Chicken Garlic Pizza"
-          title="Chicken Garlic Pizza"
-        />
-        <p class="img__attribution">Photo by Matteo Vistocco on Unsplash</p>
-        <!-- /card media -->
-        <div class="card-body ms-2">
-          <!-- card body -->
-          <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
-          <span class="card-text fs-1">Chicken Garlic Pizza</span>
-          <p class="fs-6 fw-bold mt-2">Ksimone619</p>
+          <!-- second-card -->
+          <!-- ************************************** -->
+          <a
+            href="/assets/recipes/garlicpizza.html"
+            class="card mt-4 mb-3 pb-3 pb-xl-0 border-0 d-flex col-sm-6 flex-xl-row"
+            data-cta="Read Now"
+            data-ordinal="1"
+          >
+            <!-- card media -->
+            <img
+              src="/assets/images/chicken-pizza.jpg"
+              class="card-img-top"
+              alt="Chicken Garlic Pizza"
+              title="Chicken Garlic Pizza"
+            />
+            <!-- /card media -->
+            <div>
+              <div class="card-body horizontal ms-2">
+                <!-- card body -->
+                <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
+                <span class="card-text font-xl">Chicken Garlic Pizza</span>
+                <p class="fs-6 fw-bold mt-2">Ksimone619</p>
+              </div>
+              <!-- /card body -->
+              <div class="card-footer ms-2">
+                <div class="d-flex">
+                  <i class="bi bi-clock-history card__footer-icon"></i>
+                  <span class="px-1 card__footer-time">35 mins</span>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-        <!-- /card body -->
-        <div class="card-footer ms-2">
-          <div class="d-flex">
-            <i class="bi bi-clock-history card__footer-icon"></i>
-            <span class="px-1 card__footer-time">50 mins</span>
+        <!-- Third card -->
+        <!-- ******************************************** -->
+        <a
+          href="/assets/recipes/tacolasagna.html"
+          class="card mt-4 mt-sm-2 mb-3 pb-3 pb-sm-0 border-0 flex-sm-row flex-xl-column"
+          id="thirdCard"
+          data-cta="Read Now"
+          data-ordinal="1"
+        >
+          <!-- card media -->
+          <img
+            src="/assets/images/lasagna.jpg"
+            class="card-img-top"
+            alt="Chicken Taco Lasagna"
+            title="Chicken Taco Lasagna"
+          />
+          <!-- /card media -->
+          <div class="flex-sm-column col-sm-6 ps-sm-3">
+            <div class="card-body horizontal ms-2">
+              <!-- card body -->
+              <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
+              <span class="card-text font-xl">Chicken Taco Lasagna</span>
+              <p class="fs-6 fw-bold mt-2">Ksimone619</p>
+            </div>
+            <!-- /card body -->
+            <div class="card-footer ms-2">
+              <div class="d-flex">
+                <i class="bi bi-clock-history card__footer-icon"></i>
+                <span class="px-1 card__footer-time">1 hr 35 mins</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </a>
-
-      <!-- Third card -->
-      <!-- ******************************************** -->
-      <a
-        href="#"
-        class="card mt-4 mb-3 pb-3 border-0 d-flex"
-        data-cta="Read Now"
-        data-ordinal="1"
-      >
-        <!-- card media -->
-        <img
-          src="/assets/images/lasagna.jpg"
-          class="card-img-fluid"
-          alt="Chicken Taco Lasagna"
-          title="Chicken Taco Lasagna"
-        />
-        <p class="img__attribution">Photo by irws on Unsplash</p>
-        <!-- /card media -->
-        <div class="card-body ms-2">
-          <!-- card body -->
-          <h5 class="card-title fs-6 text-uppercase fw-bold">Recipes</h5>
-          <span class="card-text fs-1">Chicken Taco Lasagna</span>
-          <p class="fs-6 fw-bold mt-2">Ksimone619</p>
-        </div>
-        <!-- /card body -->
-        <div class="card-footer ms-2+">
-          <div class="d-flex">
-            <i class="bi bi-clock-history card__footer-icon"></i>
-            <span class="px-1 card__footer-time">1 hr 35 mins</span>
-          </div>
-        </div>
-      </a>
+        </a>
+      </section>
 
       <!-- Explore Recipes -->
-      <section class="explore__wrapper container mt-5 mb-3">
+      <section class="explore__wrapper container-lg mt-5 mb-3">
         <h3 class="pb-3 display-5">Explore Recipes</h3>
         <div class="explore__options pt-2 pb=1">
           <a href="#" class="me-2">
@@ -247,28 +270,34 @@
         </div>
       </section>
 
-      <!-- Explore Recipes -->
-      <section class="explore__recipes container">
-        <div class="d-flex row gx-3">
+      <!-- Explore Recipes cards-->
+      <section class="explore__recipes container-lg">
+        <div class="recipes-container row gx-3 gx-sm-4">
           <a
             href="#"
             class="card mt-1 mb-3 pb-3 border-0 d-flex col-6 col-lg-4"
-            data-cta="Read Now"
-            data-ordinal="1"
           >
             <!-- card media -->
-            <img
-              src="/assets/images/veg-meatballs.jpg"
-              class="card-img-top"
-              alt="Chickpea Vegetarian Meatballs"
-              title="Chickpea Vegetarian Meatballs"
-            />
-            <p class="img__attribution small__card-attribution">Photo by Reshu Drolia on Unsplash</p>
+            <div class="image-container">
+              <img
+                src="/assets/images/veg-meatballs.jpg"
+                class="card-img-top"
+                alt="Chickpea Vegetarian Meatballs"
+                title="Chickpea Vegetarian Meatballs"
+              />
+              <p class="img__attribution small__card-attribution">
+                Photo by Reshu Drolia on Unsplash
+              </p>
+            </div>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-4">Chickpea Vegetarian Meatballs</span>
+              <h5 class="card-title small__card-title text-uppercase">
+                Recipes
+              </h5>
+              <span class="card-text small-card-text"
+                >Chickpea Vegetarian Meatballs</span
+              >
               <p class="fs-6 fw-bold mt-2">Amanda Koss</p>
             </div>
             <!-- /card body -->
@@ -283,29 +312,33 @@
           <a
             href="#"
             class="card mt-1 mb-3 pb-3 border-0 d-flex col-6 col-lg-4"
-            data-cta="Read Now"
-            data-ordinal="1"
           >
             <!-- card media -->
             <img
               src="/assets/images/pulled-pork-sand.jpg"
               class="card-img-top"
               alt="Slow cooker Texas Pulled Pork"
-              title="Slow Cooker Texas Pulled Pork"
+              title="Slow cooker Texas Pulled Pork"
             />
-            <p class="img__attribution small__card-attribution">Photo by Louis Hansel on Unsplash</p>
+            <p class="img__attribution small__card-attribution">
+              Photo by Louis Hansel on Unsplash
+            </p>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-1">Slow Cooker Texas Pulled Pork</span>
-              <p class="fs-6 fw-bold mt-2">cmccreight</p>
+              <h5 class="card-title small__card-title text-uppercase">
+                Recipes
+              </h5>
+              <span class="card-text small-card-text"
+                >Slow cooker Texas Pulled Pork</span
+              >
+              <p class="fs-6 fw-bold mt-2">Amanda Koss</p>
             </div>
             <!-- /card body -->
             <div class="card-footer">
               <div class="d-flex">
                 <i class="bi bi-clock-history card__footer-icon"></i>
-                <span class="px-1 card__footer-time">5 hrs 15mins</span>
+                <span class="px-1 card__footer-time">5 hrs 15 mins</span>
               </div>
             </div>
           </a>
@@ -319,16 +352,20 @@
             <!-- card media -->
             <img
               src="/assets/images/Fetuchini-alfredo.jpg"
-              class="card-img-fluid"
+              class="card-img-top"
               alt="Fettuccine Alfredo"
               title="Fettuccine Alfredo"
             />
-            <p class="img__attribution small__card-attribution">Photo by amirali mirhashemian on Unsplash</p>
+            <p class="img__attribution small__card-attribution">
+              Photo by amirali mirhashemian on Unsplash
+            </p>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-1">Fettuccine Alfredo</span>
+              <h5 class="card-title small__card-title text-uppercase fw-bold">
+                Recipes
+              </h5>
+              <span class="card-text small-card-text">Fettuccine Alfredo</span>
               <p class="fs-6 fw-bold mt-2">Ksimone619</p>
             </div>
             <!-- /card body -->
@@ -349,16 +386,20 @@
             <!-- card media -->
             <img
               src="/assets/images/salmon.jpg"
-              class="card-img-fluid"
+              class="card-img-top"
               alt="Grilled Salmon"
               title="Grilled Salmon"
             />
-            <p class="img__attribution small__card-attribution">Photo by jeff ahmadi on Unsplash</p>
+            <p class="img__attribution small__card-attribution">
+              Photo by jeff ahmadi on Unsplash
+            </p>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-1">Grilled Salmon</span>
+              <h5 class="card-title small__card-title text-uppercase fw-bold">
+                Recipes
+              </h5>
+              <span class="card-text small-card-text">Grilled Salmon</span>
               <p class="fs-6 fw-bold mt-2">tinamenina</p>
             </div>
             <!-- /card body -->
@@ -372,7 +413,7 @@
 
           <a
             href="#"
-            class="card  mt-1 mb-3 pb-3 border-0 d-flex col-6 col-lg-4"
+            class="card mt-1 mb-3 pb-3 border-0 d-flex col-6 col-lg-4"
             data-cta="Read Now"
             data-ordinal="1"
           >
@@ -383,12 +424,16 @@
               alt="Rich Banana Bread"
               title="Rich Banana Bread"
             />
-            <p class="img__attribution small__card-attribution">Photo by Evangelina Silina on Unsplash</p>
+            <p class="img__attribution small__card-attribution">
+              Photo by Evangelina Silina on Unsplash
+            </p>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-1">Richh Banana Bread</span>
+              <h5 class="card-title small__card-title text-uppercase fw-bold">
+                Recipes
+              </h5>
+              <span class="card-text small-card-text">Rich Banana Bread</span>
               <p class="fs-6 fw-bold mt-2">vjonsson</p>
             </div>
             <!-- /card body -->
@@ -413,12 +458,16 @@
               alt="Donut Muffins"
               title="Donut Muffins"
             />
-            <p class="small__card-attribution img__attribution">Photo by Linda Söndergaard on Unsplash</p>
+            <p class="small__card-attribution img__attribution">
+              Photo by Linda Söndergaard on Unsplash
+            </p>
             <!-- /card media -->
             <div class="card-body">
               <!-- card body -->
-              <h5 class="card-title small__card-title text-uppercase fw-bold">Recipes</h5>
-              <span class="card-text fs-1">Donut Muffins</span>
+              <h5 class="card-title small__card-title text-uppercase fw-bold">
+                Recipes
+              </h5>
+              <span class="small-card-text card-text">Donut Muffins</span>
               <p class="fs-6 fw-bold mt-2">Ksimone619</p>
             </div>
             <!-- /card body -->
@@ -432,6 +481,15 @@
         </div>
       </section>
     </main>
+
+    <footer class="container-xl main-footer d-flex flex-column">
+      <span
+        >&copy;2022 Aurora Chef Hat. All Rights Reserved By
+        @fabioauroradev</span
+      >
+      <p>Inspired by Simplyrecipes.com</p>
+      <p>All images downloaded from Unsplash.</p>
+    </footer>
 
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
